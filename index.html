@@ -25,7 +25,7 @@
 
 
         <!-- Font -->
-        <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -50,7 +50,7 @@
                         </button>
                         <a class="navbar-brand" href="#">
                             <row>
-                                <img src="images/Logo.png" class="navbar-custom-img-inverted">
+                                <img src="images/Logo.png" class="navbar-custom-img">
                                 <span class="light">Dimitri</span> Drouet
                             </row>
                         </a>
@@ -75,7 +75,7 @@
             <div class="site-wrapper-inner-middle">
                 <div class="cover-container">
                     <div class="inner cover">
-                        <h1 class="cover-heading">Dimitri Drouet</h1>
+                        <h1 class="cover-heading"><span class="light">Dimitri</span> Drouet</h1>
                         <p class="lead">Étudiant en Master 1 Informatique |
                             <strong>
                                 Interactions Homme Machine
@@ -91,57 +91,35 @@
             </div>
         </div>
 
-        <div class="site-wrapper" id="about">
-            <div class="site-wrapper-inner-top">
-                <div class="container-fluid">
-                    <div class="jumbotron">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                                <div class="site-wrapper">
-                                    <div class="site-wrapper-inner">
-                                        <div class="cover-container">
-                                            <div class="cover">
-                                                <img src="images/portrait.jpg" class="about-image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                                <div class="container-fluid">
-                                    <h1>À propos de moi</h1>
-                                    <p>
-                                        Je suis étudiant en <strong>Interactions Homme Machine</strong> en
-                                        première année de Master. J'ai choisi cette spécialité parce les
-                                        aspects hummains sont au centre de la formation, et parce que j'ai
-                                        toujours voulu être un acteur des innovations, pouvant changer 
-                                        notre rapport à la technologie ou aux autres.
-                                    </p>
-                                    <p>
-                                        Je suis passioné de dessin et de graphisme, deux activités qui
-                                        occupe une grande partie de mon temps libre. J'aime également partir
-                                        à la découverte du monde qui nous entoure.
-                                    </p>
-                                    <a href="curriculum-vitae.html" class="btn-link btn">En savoir plus</a>    
-                                </div>
-                            </div>
-                        </div>
+        <div class="full-hw" id="about">
+            <div class="full-hw-inner">
+                <div class="row row-same-height row-full-height">
+                    <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 col-lg-full col-md-full col-sm-full 
+                                col-lg-height col-md-height col-sm-height" id="about-col">
+                        <img id="about-background">
                     </div>
-                    <div class="site-wrapper">
-                        <div class="site-wrapper-inner">
-                            <div class="cover-container">
-                                <div class="cover">
-                                    <p class="lead">
-                                        <a href="#" class="btn btn-lg btn-scroll scroll-link" data-id="project">
-                                            <span class="glyphicon glyphicon-menu-down"></span>
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 col-lg-full col-md-full col-sm-full
+                                col-lg-height col-md-height col-sm-height" style="border:2px solid; border-color: rgb(255,255,0);">
+                        <div class="middle padding-text">
+                            <h1>À propos de moi</h1>
+                            <hr/>
+                            <p>
+                                Je suis étudiant en <strong>Interactions Homme Machine</strong> en
+                                première année de Master. J'ai choisi cette spécialité parce que 
+                                les aspects hummains sont au centre de la formation, et parce que
+                                j'ai toujours voulu être un acteur des innovations, pouvant changer 
+                                notre rapport à la technologie ou aux autres.
+                            </p>
+                            <p>
+                                Je suis passioné de dessin et de graphisme, deux activités qui
+                                occupe une grande partie de mon temps libre. J'aime également partir
+                                à la découverte du monde qui nous entoure.
+                            </p>
+                            <a href="curriculum-vitae.html" class="btn">En savoir plus</a>
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
 
         <!-- Footer -->
@@ -191,7 +169,34 @@
                     log: function() { }
                 };
             }
-        </script>
 
+            $( window ).load(function() {
+                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
+            });
+
+            $( window ).resize(function() {
+                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
+            });
+
+            function setImage(id, src, containerheight, containerwidth){
+                var oh = document.getElementById(containerheight).clientHeight;
+                var ow = document.getElementById(containerwidth).clientWidth;
+                var w = document.body.clientWidth;
+                var i = document.getElementById(id);
+                i.setAttribute("src", src);
+                if (w < 768){
+                    i.style.position = "relative";
+                    i.style.width = "100%";
+                    i.style.height = "auto";
+                } else {
+                    i.style.position = "absolute";
+                    i.style.height = ""+oh+"px";
+                    i.style.width = "auto";
+                    i.style.top = "0";
+                    i.style.left = "0";
+                    i.style.clip = "rect(auto," + (ow) + "px,auto,auto)"; 
+                }
+            }
+        </script>
     </body>
 </html>
