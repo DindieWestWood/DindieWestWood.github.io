@@ -57,71 +57,18 @@
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#">Accueil</a></li>
+                            <li><a href="index.html">Accueil</a></li>
                             <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
                             <li><a href="projects.html">Projets</a></li>
                             <li><a href="portofolio.html">Portofolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li class="active"><a href="contact.html">Contact</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
             </nav>
         </header>
-
-
-
-
-        <div class="full-hw">
-            <div class="full-hw-inner">
-                <div class="cover-container">
-                    <div class="inner cover">
-                        <h1 class="cover-heading"><span class="light">Dimitri</span> Drouet</h1>
-                        <p class="lead">Étudiant en Master 1 Informatique |
-                            <strong>
-                                Interactions Homme Machine
-                            </strong>    
-                        </p>
-                        <p class="lead">
-                            <a href="#" class="btn btn-lg btn-scroll scroll-link" data-id="about">
-                                <span class="glyphicon glyphicon-menu-down"></span>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="full-hw" id="about">
-            <div class="full-hw-inner">
-                <div class="row row-same-height row-full-height">
-                    <div class="col-lg-8 col-md-7 col-sm-6 col-xs-12 col-lg-full col-md-full col-sm-full 
-                                col-lg-height col-md-height col-sm-height" id="about-col">
-                        <img id="about-background">
-                    </div>
-                    <div class="col-lg-4 col-md-5 col-sm-6 col-xs-12 col-lg-full col-md-full col-sm-full
-                                col-lg-height col-md-height col-sm-height">
-                        <div class="middle padding-text">
-                            <h1>À propos de moi</h1>
-                            <hr/>
-                            <p>
-                                Je suis étudiant en <strong>Interactions Homme Machine</strong> en
-                                première année de Master. J'ai choisi cette spécialité parce que 
-                                les aspects hummains sont au centre de la formation, et parce que
-                                j'ai toujours voulu être un acteur des innovations, pouvant changer 
-                                notre rapport à la technologie ou aux autres.
-                            </p>
-                            <p>
-                                Je suis passioné de dessin et de graphisme, deux activités qui
-                                occupe une grande partie de mon temps libre. J'aime également partir
-                                à la découverte du monde qui nous entoure.
-                            </p>
-                            <a href="curriculum-vitae.html" class="btn">En savoir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        
+        
         <!-- Footer -->
         <footer>
             <div class="footer-container hidden-xs">
@@ -178,77 +125,3 @@
                 </div>
             </div>
         </footer>
-
-
-        <!-- Bootstrap core JavaScript -->
-        <!-- ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/custom.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                // navigation click actions	
-                $('.scroll-link').on('click', function(event){
-                    event.preventDefault();
-                    var sectionID = $(this).attr("data-id");
-                    scrollToID('#' + sectionID, 750);
-                });
-                // scroll to top action
-                $('.scroll-top').on('click', function(event) {
-                    event.preventDefault();
-                    $('html, body').animate({scrollTop:0}, 'slow'); 		
-                });
-                // mobile nav toggle
-                $('#nav-toggle').on('click', function (event) {
-                    event.preventDefault();
-                    $('#main-nav').toggleClass("open");
-                });
-            });
-            // scroll function
-            function scrollToID(id, speed){
-                var offSet = 50;
-                var targetOffset = $(id).offset().top - offSet;
-                var mainNav = $('#main-nav');
-                $('html,body').animate({scrollTop:targetOffset}, speed);
-                if (mainNav.hasClass("open")) {
-                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-                    mainNav.removeClass("open");
-                }
-            }
-            if (typeof console === "undefined") {
-                console = {
-                    log: function() { }
-                };
-            }
-
-            $( window ).load(function() {
-                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
-            });
-
-            $( window ).resize(function() {
-                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
-            });
-
-            function setImage(id, src, containerheight, containerwidth){
-                var oh = document.getElementById(containerheight).clientHeight;
-                var ow = document.getElementById(containerwidth).clientWidth;
-                var w = document.body.clientWidth;
-                var i = document.getElementById(id);
-                i.setAttribute("src", src);
-                if (w < 768){
-                    i.style.position = "relative";
-                    i.style.width = "100%";
-                    i.style.height = "auto";
-                } else {
-                    i.style.position = "absolute";
-                    i.style.height = ""+oh+"px";
-                    i.style.width = "auto";
-                    i.style.top = "0";
-                    i.style.left = "0";
-                    i.style.clip = "rect(auto," + (ow) + "px,auto,auto)"; 
-                }
-            }
-        </script>
-    </body>
-</html>
