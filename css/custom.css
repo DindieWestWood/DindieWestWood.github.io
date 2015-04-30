@@ -11,18 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-h1,
-h2 {
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    color: (70,70,70);
-}
-
-h1 {
-    font-size: 42px;
-}
-
 .light {
     font-weight: 500;
 }
@@ -188,6 +176,11 @@ h1 {
     vertical-align: middle;
 }
 
+.full-hw-inner-top {
+    display: table-cell;
+    vertical-align: top;
+}
+
 .center-container {
     margin-left: auto;
     margin-right: auto;
@@ -282,6 +275,73 @@ h1 {
     }
 }
 
+.container-title {
+    color: rgb(39,39,39);
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-title h1 {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+.container-title p {
+    font-size: 25px;
+}
+
+.carousel-caption-custom {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: rgb(39,39,39);
+    font-size: 16px;
+}
+
+.carousel-caption-custom h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.carousel-caption-custom hr {
+    height: 1px;
+    width: 8%;
+    background: rgb(39,39,39);
+}
+
+.carousel-caption-custom .btn {
+    font-size: 18px;
+}
+
+
+@media (min-width: 768px) {
+    .carousel-caption-custom {
+        background-color: rgba(0,0,0,0.5);
+        color: rgb(2555,255,255);
+        font-family: 'Open Sans', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .carousel-caption-custom h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .carousel-caption-custom hr {
+        height: 2px;
+        width: 10%;
+        background: rgb(255,255,255);
+    }
+}
+
 .footer-container {
     background-color: rgb(39,39,39);
     font-family: 'Open Sans', sans-serif;
@@ -300,6 +360,12 @@ h1 {
 .footer-container a:focus {
     color: rgb(90,164,123);
     text-decoration: none;
+}
+
+.footer-container p{
+    color: rgb(100,100,100);
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .footer-title-li {

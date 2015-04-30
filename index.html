@@ -122,12 +122,71 @@
             </div>
         </div>
 
+        <div class="container-title">
+            <h1>Quelques projets réalisés</h1>
+            <p>Durant mes stages, pendant mes études ou à titre personnel.</p>
+        </div>
+        <!--<div class="full-hw" id="projects" style="border: 2px solid; border-color: rgb(255,0,0)">-->
+        <!--<div class="full-hw-inner-top" style="border: 2px solid; border-color: rgb(0,255,0)">-->
+        <div id="projects-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators hidden-xs">
+                <li data-target="#projects-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#projects-carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="hidden-lg hidden-md hidden-sm carousel-caption-custom">
+                        <h1>Grafix</h1>
+                        <hr/>
+                        <p>Logiciel de visualisation de graphes d'argumentation.</p>
+                    </div>
+                    <img id="grafix-slide" src="images/project-grafix.jpg" alt="grafix project">
+                    <div class="carousel-caption hidden-xs carousel-caption-custom">
+                        <h1>Grafix</h1>
+                        <hr/>
+                        <p>Logiciel de visualisation de graphes d'argumentation.</p>
+                        <div class="middle">
+                            <a class="btn btn-lg" href="projects.html#grafix">Découvrir ce projet</a>
+                        </div>
+                    </div>
+                    <div class="middle hidden-lg hidden-md hidden-sm" style="padding: 30px 0px;">
+                        <a class="btn btn-lg" href="projects.html#grafix">Découvrir ce projet</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="hidden-lg hidden-md hidden-sm carousel-caption-custom">
+                        <h1>Fly Higher</h1>
+                        <hr/>
+                        <p>Application ludoéducative sur les métiers de l'aronautique.</p>
+                    </div>
+                    <img id="fly-higher-slide" src="images/project-fly-higher.jpg" alt="...">
+                    <div class="carousel-caption hidden-xs carousel-caption-custom">
+                        <h1>Fly Higher</h1>
+                        <hr/>
+                        <p>Application ludoéducative sur les métiers de l'aronautique.</p>
+                        <div class="middle">
+                            <a class="btn btn-lg" href="projects.html#fly-higher">Découvrir ce projet</a>
+                        </div>
+                    </div>
+                    <div class="middle hidden-lg hidden-md hidden-sm" style="padding: 30px 0px;">
+                        <a class="btn btn-lg" href="projects.html#flyhiger">Découvrir ce projet</a>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#projects-carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#projects-carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!-- End Carousel -->
+
         <!-- Footer -->
         <footer>
-            <div class="footer-container hidden-xs">
-                <div class="row row-full-height row-same-height">
+            <div class="footer-container">
+                <div class="row row-full-height row-same-height  hidden-xs">
                     <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height"
-                         style="border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
+                         style="border-right: 1px solid; border-bottom: 2px solid; border-color: rgb(255,255,255); vertical-align: top;">
                         <div class="footer-title-li">
                             <h1><a href="curriculum-vitae.html">Curriculum Vitae</a></h1>
                             <hr/>
@@ -140,7 +199,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-full-height  col-lg-height col-md-height col-sm-height"
-                         style="border-left: 1px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
+                         style="border-left: 1px solid; border-bottom: 2px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
                         <div class="footer-title-li">
                             <h1><a href="projects.html">Projets</a></h1>
                             <hr/>
@@ -151,7 +210,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height"
-                         style="border-left: 1px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
+                         style="border-left: 1px solid; border-bottom: 2px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
                         <div class="footer-title-li">
                             <h1><a href="portofolio.html">Portofolio</a></h1>
                             <hr/>
@@ -164,7 +223,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height" 
-                         style="border-left: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
+                         style="border-left: 1px solid; border-bottom: 2px solid; border-color: rgb(255,255,255); vertical-align: top;">
                         <div class="footer-title-li">
                             <h1><a href="contact.html">Contact</a></h1>
                             <hr/>
@@ -175,6 +234,9 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div style="text-align: center; color: rgb (100,100,100); height:100%;">
+                    <p>©Dimitri Drouet. All rights reserved. | Created with <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.</p>
                 </div>
             </div>
         </footer>
@@ -220,34 +282,6 @@
                 console = {
                     log: function() { }
                 };
-            }
-
-            $( window ).load(function() {
-                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
-            });
-
-            $( window ).resize(function() {
-                setImage('about-background', "images/about-background.jpg", 'about', 'about-col');
-            });
-
-            function setImage(id, src, containerheight, containerwidth){
-                var oh = document.getElementById(containerheight).clientHeight;
-                var ow = document.getElementById(containerwidth).clientWidth;
-                var w = document.body.clientWidth;
-                var i = document.getElementById(id);
-                i.setAttribute("src", src);
-                if (w < 768){
-                    i.style.position = "relative";
-                    i.style.width = "100%";
-                    i.style.height = "auto";
-                } else {
-                    i.style.position = "absolute";
-                    i.style.height = ""+oh+"px";
-                    i.style.width = "auto";
-                    i.style.top = "0";
-                    i.style.left = "0";
-                    i.style.clip = "rect(auto," + (ow) + "px,auto,auto)"; 
-                }
             }
         </script>
     </body>
