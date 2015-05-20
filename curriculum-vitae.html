@@ -1,6 +1,3 @@
-<!--    Page d'accueil créée par Dimitri Drouet le 21/04/2015
--->
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -13,7 +10,7 @@
         <meta name="author" content="Dimitri DROUET">
 
         <title>Dimitri Drouet</title>
-        <link rel="shortcut icon" href="images/Logo.png" type="image/png"/>
+        <link rel="shortcut icon" href="images/icons/home-icon.png" type="image/png"/>
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -21,12 +18,16 @@
         <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
         <!-- Personnalisée(s) -->
-        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/general.css" rel="stylesheet">
+        <link href="css/nav.css" rel="stylesheet">
+        <link href="css/cv.css" rel="stylesheet">
 
+
+        <script src="js/Chart.min.js"></script>
 
         <!-- Font -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -38,28 +39,25 @@
 
     <body>
 
-        <!-- Header -->
+        <!-- En tête -->
         <header>
-            <!-- Bar de Navigation -->
             <nav class="navbar navbar-custom navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed"
+                                data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="glyphicon glyphicon-menu-hamburger"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">
-                            <row>
-                                <img src="images/Logo.png" class="navbar-custom-img">
-                                <span class="light">Dimitri</span> Drouet
-                            </row>
-                        </a>
+                        <div class="navbar-brand">
+                            <a href="index.html"><span class="light">Dimitri</span> Drouet</a>
+                        </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Accueil</a></li>
-                            <li class="active"><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
-                            <li><a href="projects.html">Projets</a></li>
+                            <li class="active top"><a href="#">Curriculum Vitae</a></li>
                             <li><a href="portofolio.html">Portofolio</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -67,60 +65,210 @@
                 </div>
             </nav>
         </header>
+
+         <div class="fhwc white-bg">
+            <div class="fhwc-inner">
+                <div class="centered cover">
+                    <img src="images/icons/cv-icon.png" alt="icon cv">
+                    <h1>Curriculum Vitae</h1>
+                    <a class="btn scrolling-btn" data-id="#cv-top">
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-box green-bg" id="cv-top">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>À Propos</h4>
+                </div>
+                <div class="col-sm-6">
+                    <p class="padding-text">
+                        Je suis étudiant en Interaction Homme Machine en deuxème
+                        année de Master. J'ai choisi cette spécialité parce que
+                        les aspects hummains sont au centre de la formation, et
+                        parce que j'ai toujours voulu être un acteur des
+                        innovations, pouvant changer notre rapport à la 
+                        technologie ou aux autres.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn" href="download/Dimitri-Drouet-CV.pdf" target="_blank">
+                        <span class="glyphicon glyphicon-download-alt"></span> CV en PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-box white-bg">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Experience</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h5 class="padding-text">IRIT équipe ADRIA › Stage en Informatique</h5>
+                    <p class="padding-text">
+                        Amélioration de l’interface graphique et de l'ergonomie
+                        d’un outil de visualisation et de traitement de graphes 
+                        d’argumentation utilisé comme support de recherche.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">Avril 2014 - Juin 2014</p>
+                </div>
+                <div class="col-sm-offset-2 col-sm-6">
+                    <h5 class="padding-text">Verger De J-C. Combe › Job d'été</h5>
+                    <p class="padding-text">Récolte d'abricots</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">Été 2013</p>
+                </div>
+                <div class="col-sm-offset-2 col-sm-6">
+                    <h5 class="padding-text">Garde d'enfant à domicile › (Particuliers)</h5>
+                    <p class="padding-text">Enfants âgés de 1 à 8 ans</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">2010 - 2011</p>
+                </div>
+            </div> <!-- /row-->
+            <hr class="cv-hr"/>
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Formation</h4>
+                </div>
+                <div class="col-sm-6">
+                    <h5 class="padding-text">Master en IHM* (Cursus Master Ingénieurie)</h5>
+                    <p class="padding-text">
+                        Université Paul Sabatier / ENAC (Toulouse)
+                    </p>
+                    <p class="cv-note padding-text">
+                        *(Interaction Homme machine)
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">2014 - 2016</p>
+                    <p class="cv-date padding-text"><strong>En Cours</strong></p>
+                </div>
+                <div class="col-sm-offset-2 col-sm-6">
+                    <h5 class="padding-text">Licence en Informatique</h5>
+                    <p class="padding-text">Université Paul Sabatier (Toulouse)</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">2011 - 2014</p>
+                </div>
+                <div class="col-sm-offset-2 col-sm-6">
+                    <h5 class="padding-text">Baccalauréat Scientifique</h5>
+                    <p class="padding-text">Lycée Saint-Exupéry (Hambourg)</p>
+                </div>
+                <div class="col-sm-4">
+                    <p class="cv-date padding-text">2008 - 2011</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-box green-bg comp">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Compétences Informatiques</h4>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="java" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">Java</p>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="c" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">C</p>
+                </div>
+                <div class="col-sm-offset-2 col-sm-5 col-md-3 col-md-offset-0">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="c++csharp" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">C++ / C#</p>
+                </div>
+                <div class="col-sm-5 col-md-3 col-md-offset-2">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="caml" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">Caml</p>
+                </div>
+                <div class="col-sm-5 col-sm-offset-2 col-md-3 col-md-offset-0">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="sql" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">SQL</p>
+                </div>
+                <div class="col-sm-5 col-md-3">
+                    <div class="cv-chart-container">
+                        <div class="cv-chart">
+                            <canvas id="htmlcssjs" width="150" height="150"></canvas>
+                        </div>
+                    </div>
+                    <p class="cv-chart-info">Html / CSS / JavaScript</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-box white-bg">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>À Propos</h4>
+                </div>
+                <div class="col-sm-6">
+                    <p class="padding-text">
+                        Je suis passioné de dessin et de graphisme, deux
+                        activités qui occupent une grande partie de mon temps
+                        libre. J'aime également voyager pour partir à la 
+                        découverte du monde qui nous entoure.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn" href="portofolio.html">Découvrir mes oeuvres</a>
+                </div>
+            </div>
+        </div>
         
+        <div class="footer-exhibitionist"></div>
+
         <!-- Footer -->
-        <footer>
-            <div class="footer-container hidden-xs">
-                <div class="row row-full-height row-same-height">
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height"
-                         style="border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
-                        <div class="footer-title-li">
-                            <h1><a href="curriculum-vitae.html">Curriculum Vitae</a></h1>
-                            <hr/>
-                            <ul>
-                                <li><a href="curriculum-vitae.html#formation">Formation</a></li>
-                                <li><a href="curriculum-vitae.html#experience">Expérience</a></li>
-                                <li><a href="curriculum-vitae.html#competence">Compétence</a></li>
-                                <li><a href="curriculum-vitae.html#interet">Centre d'interet</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-full-height  col-lg-height col-md-height col-sm-height"
-                         style="border-left: 1px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
-                        <div class="footer-title-li">
-                            <h1><a href="projects.html">Projets</a></h1>
-                            <hr/>
-                            <ul>
-                                <li><a href="projects.html#grafix">Grafix</a></li>
-                                <li><a href="projects.html#flyhigher">Fly Higher</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height"
-                         style="border-left: 1px solid; border-right: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
-                        <div class="footer-title-li">
-                            <h1><a href="portofolio.html">Portofolio</a></h1>
-                            <hr/>
-                            <ul>
-                                <li><a href="portofolio.html#marqueur">Marqueur</a></li>
-                                <li><a href="portofolio.html#crayonnes">Crayonnés</a></li>
-                                <li><a href="portofolio.html#gimp">GIMP</a></li>
-                                <li><a href="portofolio.html#photos">Photos</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-3 col-full-height col-lg-height col-md-height col-sm-height" 
-                         style="border-left: 1px solid; border-color: rgb(255,255,255); vertical-align: top;">
-                        <div class="footer-title-li">
-                            <h1><a href="contact.html">Contact</a></h1>
-                            <hr/>
-                            <ul>
-                                <li><a href="contact.html#localisation">Localisation</a></li>
-                                <li><a href="contact.html#coordinate">Mes coordonnées</a></li>
-                                <li><a href="contact.html#contactme">Contactez-moi</a></li>
-                            </ul>
-                        </div>
-                    </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-container-inner">
+                    <row class="footer-container-brand">
+                        <img src="images/icons/home-icon.png">
+                        <h4><span class="light">Dimitri</span> Drouet</h4>
+                    </row>
+                    <row class="footer-container-brand">
+                        <a href="index.html">Accueil</a>
+                        <a class="top active" href="#">Curriculum Vitae</a>
+                        <a href="portofolio.html">Portofolio</a>
+                        <a href="contact.html">Contact</a>
+                    </row>
+                    <p>©Dimitri Drouet. All rights reserved. | Created with
+                        <a class="created-link" href="http://getbootstrap.com/" target="_blank">Bootstrap</a>.
+                    </p>
                 </div>
             </div>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.inview.min.js" type="text/javascript"></script>
+        <script src="js/general.js" type="text/javascript"></script>
+        <script src="js/cv.js" type="text/javascript"></script>
+    </body>
+</html>
