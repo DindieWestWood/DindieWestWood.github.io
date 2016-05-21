@@ -10,7 +10,7 @@
         <meta name="author" content="Dimitri DROUET">
 
         <title>Dimitri Drouet</title>
-        <link rel="shortcut icon" href="images/icons/home-icon.png" type="image/png"/>
+        <link rel="shortcut icon" href="images/icons/home-icon.svg" type="image/png"/>
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -21,6 +21,8 @@
         <link href="css/general.css" rel="stylesheet">
         <link href="css/nav.css" rel="stylesheet">
         <link href="css/contact.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+        
 
 
         <script src="js/Chart.min.js"></script>
@@ -58,6 +60,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                            <li><a href="project.html">Projets</a></li>
                             <li><a href="portofolio.html">Portofolio</a></li>
                             <li class="active top"><a href="#">Contact</a></li>
                         </ul>
@@ -68,8 +71,8 @@
 
         <div class="fhwc white-bg">
             <div class="fhwc-inner">
-                <div class="centered cover">
-                    <img src="images/icons/contact-icon.png" alt="icon contact" style="margin-left: 50px;">
+                <div class="centered cover animated flipInX">
+                    <img src="images/icons/contact-icon.svg" alt="icon contact">
                     <h1>Contact</h1>
                     <a class="btn scrolling-btn" data-id="#contact-top">
                         <span class="glyphicon glyphicon-menu-down"></span>
@@ -88,27 +91,27 @@
         </div>
 
         <div class="contact-container white-bg">
-            <h2>Informations générales</h2>
-            <hr/>
+            <h2 class="contact-title animated hide-it">Informations générales</h2>
+            <hr class="contact-title animated hide-it"/>
             <div class="row">
-                <div class="col-sm-4 first">
-                    <img src="images/icons/adress-icon.png">
-                    <h3>Adresse</h3>
-                    <p class="padding-text">
+                <div class="col-sm-4">
+                    <img src="images/icons/adress-icon.svg" class="contact-icon animated hide-it first">
+                    <h3 class="contact-subtitle animated hide-it first">Adresse</h3>
+                    <p class="padding-text contact-desc animated hide-it first">
                         33 rue Gambetta, Toulouse
                     </p>
                 </div>
-                <div class="col-sm-4 second">
-                    <img src="images/icons/phone-icon.png">
-                    <h3>Téléphone</h3>
-                    <p class="padding-text">
+                <div class="col-sm-4">
+                    <img src="images/icons/phone-icon.svg" class="contact-icon animated hide-it second">
+                    <h3 class="contact-subtitle animated hide-it second">Téléphone</h3>
+                    <p class="padding-text contact-desc animated hide-it second">
                         0760399788
                     </p>
                 </div>
-                <div class="col-sm-4 third">
-                    <img src="images/icons/mail-icon.png">
-                    <h3>Mail</h3>
-                    <p class="padding-text">
+                <div class="col-sm-4">
+                    <img src="images/icons/mail-icon.svg" class="contact-icon animated hide-it third">
+                    <h3 class="contact-subtitle animated hide-it third">Mail</h3>
+                    <p class="padding-text contact-desc animated hide-it third">
                         drouet.dimitri@gmail.com
                     </p>
                 </div>
@@ -116,30 +119,33 @@
         </div>
         <div class="contact-container dark-grey-bg brd-btm">
             <h2 class="pdg-btm">Contactez moi</h2>
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nom*"
-                               id="name" required data-validation-required-message="Entrez votre nom s'il vous plaît.">
-                        <p class="help-block text-danger"></p>
+            <form name="sendMessage" id="contactForm" action="#" method="POST">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nom*"
+                                   name="name" id="name" required data-validation-required-message="Entrez votre nom s'il vous plaît.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Adresse Email*"
+                                   name="email" id="email" required data-validation-required-message="Entrez votre adresse email s'il vous plaît.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="subject" class="form-control" placeholder="Sujet" name="subject" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Message*" name="message" id="message" required
+                                      data-validation-required-message="Entrez un message s'il vous plaît."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    
+                        <div class="clearfix"></div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Adresse Email*"
-                               id="email" required data-validation-required-message="Entrez votre adresse email s'il vous plaît.">
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="form-group">
-                        <input type="subject" class="form-control" placeholder="Sujet" id="subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Message*" id="message" required
-                                  data-validation-required-message="Entrez un message s'il vous plaît."></textarea>
-                        <p class="help-block text-danger"></p>
-                    </div>
-                    <div class="clearfix"></div>
                 </div>
-            </div>
-            <a type="submit" class="btn btn-lg">Envoyer</a>
+                <input id="send-btn" type="submit" class="btn btn-lg" value="Envoyer"></a>
+            </form>
         </div>
 
         <div class="footer-exhibitionist"></div>
@@ -149,12 +155,13 @@
             <div class="footer-container">
                 <div class="footer-container-inner">
                     <row class="footer-container-brand">
-                        <img src="images/icons/home-icon.png">
+                        <img src="images/icons/home-icon-white.svg">
                         <h4><span class="light">Dimitri</span> Drouet</h4>
                     </row>
                     <row class="footer-container-brand">
                         <a href="index.html">Accueil</a>
                         <a href="curriculum-vitae.html">Curriculum Vitae</a>
+                        <a href="project.html">Projets</a>
                         <a href="portofolio.html">Portofolio</a>
                         <a class="top active" href="#">Contact</a>
                     </row>

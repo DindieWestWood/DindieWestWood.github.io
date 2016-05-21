@@ -1,14 +1,14 @@
 var map;
 var marker;
 var latlng;
-var isOpen = false;
 
 $(document).ready(function () {
 
     initialize();
 
     var seen = false;
-
+    var seenContact = false;
+    
     $('.contact-map-container').bind('inview', function (event, isInView, visiblePartX, visiblePartY) {
         if (isInView && !seen) {
             marker.setAnimation(google.maps.Animation.DROP);
@@ -16,9 +16,37 @@ $(document).ready(function () {
         }
     });
 
+     $('.contact-container').bind('inview', function (event, isInView, visiblePartX, visblePartY) {
+        if (isInView && !seenContact) {
+            $(".contact-title").addClass("fadeIn");
+            $(".contact-icon").addClass("zoomIn");
+            $(".contact-icon").removeClass("hide-it");
+            $(".contact-subtitle").addClass("fadeIn");
+            $(".contact-desc").addClass("fadeIn");
+            contact = true;
+        }
+    });
+    
     $(window).resize(updateMap);
     
-
+    $('#contactForm').submit(function (event){
+        console.log("j'ai submit");
+        event.preventDefault(true);
+        $.ajax({
+        url: 'php/send.php',
+        type: 'post',
+        dataType: 'json',
+        data: $('form#contactForm').serialize(),
+        success: function(data) {
+            console.log(data);
+            
+        },
+        error: function(data) {
+            console.error(data);
+        }
+    });
+    });
+    
 });
 
 
@@ -59,7 +87,7 @@ function initialize() {
     });
 
     google.maps.event.addListener(marker, 'click', function() {
-        if (isOpen) {
+        if (isInfoWindowOpen(infowindow)) {
             infowindow.close();
             isOpen = false;
         } else {
@@ -81,5 +109,9 @@ function setMapHeight(){
 
 function updateMap() {
     setMapCentre();
-    setMapHeight();
+}
+
+function isInfoWindowOpen(infoWindow){
+    var mapIW = infoWindow.getMap();
+    return (mapIW !== null && typeof mapIW !== "undefined");
 }

@@ -19,19 +19,21 @@
     overflow: hidden;
 }
 
-figure img {
-	width: 100%;
+.portofolio-box {
+    overflow: hidden;
     padding: 0px;
-    margin: 0px;
-    height: auto;
+}
+
+
+figure img {
 	display: block;
 	position: relative;
+	width: 100%;
+    height: auto;
 }
 
 figure {
-    padding: 0px;
-    margin: 0px;
-	transition: transform 0.6s;
+    transition: transform 0.6s;
 }
 
 figcaption {
@@ -39,8 +41,6 @@ figcaption {
     text-align: center;
 	top: 0;
 	left: 0;
-	padding: 0px;
-	background: rgba(255,255,255,.9);
 	color: rgb(0,0,0);
     height: 100%;
 	width: 100%;
@@ -48,16 +48,15 @@ figcaption {
 	bottom: 0;
 	opacity: 0;
 	transform: translateY(100%);
+	transition: transform .3s;
 }
 
 figcaption h3 {
-	margin: 0px;
 	padding: 10px;
     font-size: 30px;
 }
 
 figcaption p {
-	margin: 0px;
 	padding: 10px;
 	font-size: 16px;
 }
@@ -70,6 +69,26 @@ figure:hover figcaption {
     opacity: 1;
 	transform: translateY(0%);
 	transition: transform .6s;
+}
+
+.red {
+    background-color: rgba(230,60,60,.9);
+}
+
+.yellow {
+    background-color: rgba(245,190,55,.9);
+}
+
+.green {
+    background-color: rgba(70,175,70,.9);
+}
+
+.blue {
+    background-color: rgba(50,100,210,.9);
+}
+
+body {
+    overflow-y: auto;
 }
 
 /*.portofolio-container img {

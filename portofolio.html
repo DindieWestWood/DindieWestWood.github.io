@@ -10,7 +10,7 @@
         <meta name="author" content="Dimitri DROUET">
 
         <title>Dimitri Drouet</title>
-        <link rel="shortcut icon" href="images/icons/home-icon.png" type="image/png"/>
+        <link rel="shortcut icon" href="images/icons/home-icon.svg" type="image/png"/>
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -21,6 +21,8 @@
         <link href="css/general.css" rel="stylesheet">
         <link href="css/nav.css" rel="stylesheet">
         <link href="css/portofolio.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+        <link href="css/fancybox.css" rel="stylesheet">
 
 
         <script src="js/Chart.min.js"></script>
@@ -58,6 +60,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Accueil</a></li>
                             <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
+                            <li><a herf="projet.html">Projets</a></li>
                             <li class="active top" ><a href="#">Portofolio</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -68,8 +71,8 @@
 
         <div class="fhwc white-bg">
             <div class="fhwc-inner">
-                <div class="centered cover">
-                    <img src="images/icons/pen-icon.png" alt="icon portofolio">
+                <div class="centered cover animated flipInX">
+                    <img src="images/icons/pen-icon.svg" alt="icon portofolio">
                     <h1>Portofolio</h1>
                     <a class="btn scrolling-btn" data-id="#portofolio-top">
                         <span class="glyphicon glyphicon-menu-down"></span>
@@ -84,11 +87,198 @@
                     <h2>Dessin</h2>
                 </div>
                 <div class="row">
-                    <!--<div class="col-lg-3 col-md-4 col-sm-6">
-<a href="#" class="portofolio-box">
-<img src="images/portofolio/min" alt="">
-</a>
-</div>-->
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/GrosseTeteSkateur.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/GrosseTeteSkateur.JPG">
+                                <figcaption class="blue">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Skateur à la Grosse Tête</h3>
+                                            <hr/>
+                                            <p>Dessin au Crayon et Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/GrosseTeteActrice.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/GrosseTeteActrice.JPG">
+                                <figcaption class="red">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Actrice à la Grosse Tête</h3>
+                                            <hr/>
+                                            <p>Dessin au Crayon et Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/HommeDAffaire.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/HommeDAffaire.JPG">
+                                <figcaption class="green">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Homme d'Affaires</h3>
+                                            <hr/>
+                                            <p>Dessin au Crayon et Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/KeithHaring.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/KeithHaring.JPG">
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Keith Haring</h3>
+                                            <hr/>
+                                            <p>Dessin aux Feutres.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/Main.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/Main.JPG">
+                                <figcaption class="green">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Main</h3>
+                                            <hr/>
+                                            <p>Dessin au Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/Narguiles.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/Narguiles.JPG">
+                                <figcaption class="red">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Narguilés</h3>
+                                            <hr/>
+                                            <p>Dessin au Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/DansLaForet.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/DansLaForet.JPG">
+                                <figcaption class="blue">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Dans la Fôret</h3>
+                                            <hr/>
+                                            <p>Dessin au Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/Theiere.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/Theiere.JPG">
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Théière Marocaine</h3>
+                                            <hr/>
+                                            <p>Dessin au Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/Exploratrice.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/Exploratrice.JPG">
+                                <figcaption class="green">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Exploratrice</h3>
+                                            <hr/>
+                                            <p>Dessin au Stylo.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/BlindCat.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/BlindCat.JPG">
+                                <figcaption class="red">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Blind Cat</h3>
+                                            <hr/>
+                                            <p>Dessin au Marqueur.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/BlindCatPianiste.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/BlindCatPianiste.JPG">
+                                <figcaption class="blue">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Blind Cat Pianiste</h3>
+                                            <hr/>
+                                            <p>Dessin au Marqueur.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/draw/BlindCatFado.JPG">
+                            <figure>
+                                <img src="images/portofolio/min/BlindCatFado.JPG">
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Blind Cat Fado</h3>
+                                            <hr/>
+                                            <p>Dessin au Marqueur.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,25 +289,146 @@
                     <h2>Graphisme</h2>
                 </div>
                 <div class="row">
-                    <div class="col-sm-2 col-md-4 col-lg-3 portofolio-box">
-                        <a class="top">
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/boulangerie.jpg">
                             <figure>
                                 <img src="images/portofolio/min/boulangerie.jpg">
-                                <figcaption>
-                                    <h3>Boulangerie</h3>
-                                    <p>Lorem ispum parableum tralala ta mere en string</p>
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Boulangerie</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vielle affiche publicitaire.</p>
+                                        </div>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
                     </div>
-                    <div class="col-sm-2 col-md-4 col-lg-3 portofolio-box" style="border:2px solid black;">
-                        <a class="top">
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/DeFilEnAiguille.jpg">
                             <figure>
                                 <img src="images/portofolio/min/DeFilEnAiguille.jpg">
-                                <figcaption>
-                                    
-                                    <h3>Boulangerie</h3>
-                                    <p>Lorem ispum parableum tralala ta mere en string</p>
+                                <figcaption class="green">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>De fil en aiguille</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vielle affiche de publicité pour une machine à coudre.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/DjangoReinhardt.jpg">
+                            <figure>
+                                <img src="images/portofolio/min/DjangoReinhardt.jpg">
+                                <figcaption class="red">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Django Reinhardt</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vielle affiche de concert.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/coqTatoo.png">
+                            <figure>
+                                <img src="images/portofolio/min/coqTatoo.png">
+                                <figcaption class="blue">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Coq Tatoo</h3>
+                                            <hr/>
+                                            <p>Dans le style d'un tatouage.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/Feelings.png">
+                            <figure>
+                                <img src="images/portofolio/min/Feelings.png">
+                                <figcaption class="red">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Feelings</h3>
+                                            <hr/>
+                                            <p>Les émotions représentées à la façon des masques de théâtre de la grèce antique.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/Harlequin.png">
+                            <figure>
+                                <img src="images/portofolio/min/Harlequin.png">
+                                <figcaption class="green">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Harlequin</h3>
+                                            <hr/>
+                                            <p>Famille d'acrobates dans un style cartoon.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/FrancisCabrel.png">
+                            <figure>
+                                <img src="images/portofolio/min/FrancisCabrel.png">
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Francis Cabrel</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vieille affiche de concert.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/JimiHendrix.png">
+                            <figure>
+                                <img src="images/portofolio/min/JimiHendrix.png">
+                                <figcaption class="blue">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>Jimi Hendrix</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vieille affiche de concert.</p>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 portofolio-box">
+                        <a class="image-gallery" rel="group-2" href="images/portofolio/graphism/TheBeatles.png">
+                            <figure>
+                                <img src="images/portofolio/min/TheBeatles.png">
+                                <figcaption class="yellow">
+                                    <div class="fhwc">
+                                        <div class="fhwc-inner">
+                                            <h3>The Beatles</h3>
+                                            <hr/>
+                                            <p>Dans le style d'une vieille affiche de concert.</p>
+                                        </div>
+                                    </div>
                                 </figcaption>
                             </figure>
                         </a>
@@ -141,12 +452,13 @@
             <div class="footer-container">
                 <div class="footer-container-inner">
                     <row class="footer-container-brand">
-                        <img src="images/icons/home-icon.png">
+                        <img src="images/icons/home-icon-white.svg">
                         <h4><span class="light">Dimitri</span> Drouet</h4>
                     </row>
                     <row class="footer-container-brand">
                         <a href="index.html">Accueil</a>
                         <a href="curriculum-vitae.html">Curriculum Vitae</a>
+                        <a herf="project.html">Projets</a>
                         <a class="top active" href="#">Portofolio</a>
                         <a href="contact.html">Contact</a>
                     </row>
@@ -160,7 +472,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
         <script src="js/jquery.inview.min.js" type="text/javascript"></script>
+        <script src="js/jquery.fancybox.js" type="text/javascript"></script>
+        <script src="js/jquery.fancybox.pack.js" type="text/javascript"></script>
         <script src="js/general.js" type="text/javascript"></script>
-        <script src="js/cv.js" type="text/javascript"></script>
+        <script src="js/portofolio.js" type="text/javascript"></script>
     </body>
 </html>

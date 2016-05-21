@@ -10,7 +10,7 @@
         <meta name="author" content="Dimitri DROUET">
 
         <title>Dimitri Drouet</title>
-        <link rel="shortcut icon" href="images/icons/home-icon.png" type="image/png"/>
+        <link rel="shortcut icon" href="images/icons/home-icon.svg" type="image/png"/>
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -21,6 +21,7 @@
         <link href="css/general.css" rel="stylesheet">
         <link href="css/nav.css" rel="stylesheet">
         <link href="css/cv.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
 
 
         <script src="js/Chart.min.js"></script>
@@ -58,6 +59,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="index.html">Accueil</a></li>
                             <li class="active top"><a href="#">Curriculum Vitae</a></li>
+                            <li><a href="project.html">Projets</a></li>
                             <li><a href="portofolio.html">Portofolio</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
@@ -66,10 +68,10 @@
             </nav>
         </header>
 
-         <div class="fhwc white-bg">
+        <div class="fhwc white-bg">
             <div class="fhwc-inner">
-                <div class="centered cover">
-                    <img src="images/icons/cv-icon.png" alt="icon cv">
+                <div class="centered cover animated flipInX">
+                    <img src="images/icons/cv-icon.svg" alt="icon cv">
                     <h1>Curriculum Vitae</h1>
                     <a class="btn scrolling-btn" data-id="#cv-top">
                         <span class="glyphicon glyphicon-menu-down"></span>
@@ -167,7 +169,7 @@
             </div>
         </div>
 
-        <div class="cv-box green-bg comp">
+        <div class="cv-box green-bg image-bg comp">
             <div class="row">
                 <div class="col-sm-2">
                     <h4>Compétences Informatiques</h4>
@@ -223,7 +225,23 @@
             </div>
         </div>
 
-        <div class="cv-box white-bg">
+        <div class="cv-box white-bg shadowed-bottom">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>Projets</h4>
+                </div>
+                <div class="col-sm-6">
+                    <p class="padding-text">
+                        Durant mes études j'ai eu la possibilité de participer à
+                        de nombreux projets de natures diverses. Ils m'ont permi
+                        de développer mes compétences.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <a class="btn" href="project.html">Découvrir mes projets</a>
+                </div>
+            </div>
+            <hr class="cv-hr"/>
             <div class="row">
                 <div class="col-sm-2">
                     <h4>À Propos</h4>
@@ -241,7 +259,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="footer-exhibitionist"></div>
 
         <!-- Footer -->
@@ -249,12 +267,13 @@
             <div class="footer-container">
                 <div class="footer-container-inner">
                     <row class="footer-container-brand">
-                        <img src="images/icons/home-icon.png">
+                        <img src="images/icons/home-icon-white.svg">
                         <h4><span class="light">Dimitri</span> Drouet</h4>
                     </row>
                     <row class="footer-container-brand">
                         <a href="index.html">Accueil</a>
                         <a class="top active" href="#">Curriculum Vitae</a>
+                        <a href="project.html">Projets</a>
                         <a href="portofolio.html">Portofolio</a>
                         <a href="contact.html">Contact</a>
                     </row>
