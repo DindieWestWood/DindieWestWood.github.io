@@ -36,12 +36,12 @@ $(document).ready(function () {
             ctx = document.getElementById("c").getContext("2d");
             data = [
                 {
-                    value: 80,
+                    value: 70,
                     color: "#f3bc37",
                     highlight: "#ffd265"
                 },
                 {
-                    value: 20,
+                    value: 30,
                     color: "#ffffff",
                     highlight: "#ffffff"
                 }
@@ -50,12 +50,12 @@ $(document).ready(function () {
             ctx = document.getElementById("c++csharp").getContext("2d");
             data = [
                 {
-                    value: 70,
+                    value: 80,
                     color: "#f3bc37",
                     highlight: "#ffd265"
                 },
                 {
-                    value: 30,
+                    value: 20,
                     color: "#ffffff",
                     highlight: "#ffffff"
                 }

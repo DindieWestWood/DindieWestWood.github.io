@@ -80,7 +80,7 @@ function initialize() {
         icon: image
     });
 
-    var contentString = '<div class="map-marker-content"><h5>Je suis actuellement à</h5><p>Toulouse | Haute-Garonne</p></div>';
+    var contentString = '<div class="map-marker-content"><h5>I am currently in</h5><p>Toulouse | Haute-Garonne</p></div>';
 
     var infowindow = new google.maps.InfoWindow({
         content: contentString
