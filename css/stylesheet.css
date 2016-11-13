@@ -15,5 +15,20 @@ html {
 }
 
 body {
-
+    width: inherit;
+    height: inherit;
+    overflow-x: hidden;
+    
+    background-attachment: fixed;
+    background-color: #BDBDBD;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    background-size: 20px 20px;
+    color: #FFFFFF;
+    cursor: url(/images/cursors/cursor.png), auto;
+    font-family: gilroy;
 }
