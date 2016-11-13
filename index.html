@@ -1,192 +1,40 @@
-<!--    Page d'accueil créée par Dimitri Drouet le 21/04/2015
--->
+<!------------------------------------------------------------------------------
+http://dindiewestwood.github.io/
+@author Dimitri Drouet
+@version 1.0
+------------------------------------------------------------------------------->
 
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
     <head>
-        <!-- Meta données -->
+        <!-- Meta Data -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Site CV de Dimitri DROUET">
+        <meta name="description" content="Dimitri Drouet's personal website">
         <meta name="author" content="Dimitri DROUET">
 
-        <title>Dimitri Drouet</title>
-        <link rel="shortcut icon" href="images/icons/home-icon.svg" type="image/png"/>
+        <title>DIMITRI DROUET</title>
+        <link rel="shortcut icon" href="images/logo-black.png" type="image/png"/>
 
         <!-- CSS -->
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet">
 
         <!-- Personnalisée(s) -->
-        <link href="css/general.css" rel="stylesheet">
-        <link href="css/nav.css" rel="stylesheet">
-        <link href="css/home.css" rel="stylesheet">
-        <link href="css/animation.css" rel="stylesheet">
-
-        <!-- Font -->
-        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-
+        <link href="css/stylesheet.css" rel="stylesheet">
+        
+        <!-- JavaScript -->
+        <script src="js/"></script>
+        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
-
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
-
+    
     <body>
-        <!-- style="border: 2px solid; border-color: rgb(0,0,0);"-->
-        <!-- En tête -->
-        <header>
-            <nav class="navbar navbar-custom navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed"
-                                data-toggle="collapse" data-target="#navbar"
-                                aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                        </button>
-                        <div class="navbar-brand">
-                            <a class="top" href="#"><span class="light">Dimitri</span> Drouet</a>
-                        </div>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active top"><a href="#">Home</a></li>
-                            <li><a href="curriculum-vitae.html">Curriculum Vitae</a></li>
-                            <li><a href="project.html">Projects</a></li>
-                            <li><a href="portofolio.html">Portofolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </div>
-            </nav>
-        </header>
-
-        <!-- Message d'accueil -->
-        <div class="fhwc white-bg shadowed-bottom">
-            <div class="fhwc-inner">
-                <div class="centered cover animated flipInX">
-                    <img src="images/icons/home-icon.svg" alt="logo du site">
-                    <h1><span class="light">Dimitri</span> Drouet</h1>
-                    <p class="lead">Master 2 Student |
-                        <strong>
-                            Human Computer Interaction
-                        </strong>    
-                    </p>
-                    <a class="btn scrolling-btn" data-id="#about">
-                        <span class="glyphicon glyphicon-menu-down"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
         
-        <div class="row about about-row home-about-bg image-bg" id="about">
-            <div class="hidden-xs col-sm-6 col-md-6 col-lg-6 vcenter about-image animated hide-it">
-                <div class="about-img-container">
-                    <img class="about-img img-circle img-responsive shadowed" src="images/backgrounds/DROUET%20Dimitri%201.JPG">
-                </div>
-            </div><!--
-            --><div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 vcenter shadowed about-container about-info gradient-white-bg animated hide-it">
-                <img class="hidden-sm hidden-md hidden-lg img-circle shadowed about-img-small"src="images/backgrounds/DROUET%20Dimitri%201.JPG">
-                <h3>About me</h3>
-                    <hr/>
-                    <p>
-                        Hello world ! My name is Dimitri and I am a student in
-                        <strong> Human Computer Interaction</strong>, I'm currently
-                        finishing my last year of study. I choosed this speciality
-                        because humans factors are the heart of this speciality, and because
-                        I always wanted to be an actor of innovations that could change our
-                        relationship with technology and each other.
-                    </p>
-                    <p>
-                        I'm passionated by drawing and graphism. Two activities that occupy
-                        a huge part of my spare time. I also like to travel to discover the beauty of our world.
-                    </p>
-                    <a class="btn" href="curriculum-vitae.html">More about me</a>
-            </div>
-        </div>
-        
-        <div class="home-container project home-container-padding dark-grey-bg">
-            <div class="home-container-inner">
-                <h2 class="project-title animated hide-it">Projects I worked on</h2>
-                <hr class="project-title animated hide-it"/>
-                <a class="btn project-desc animated first hide-it" href="project.html">Discover my projects</a>
-            </div>
-        </div>
-        
-        <div class="home-container portofolio home-container-padding gradient-white-bg">
-            <div class="home-container-inner">
-                <h2 class="protofolio-title animated hide-it">Portofolio</h2>
-            <hr class="protofolio-title animated hide-it"/>
-            <div class="row">
-                <div class="col-sm-4 col-sm-offset-2">
-                    <img src="images/icons/pen-icon.svg" class="portofolio-icon animated hide-it first">
-                    <h3 class="portofolio-subtitle animated hide-it first">Drawings</h3>
-                    <p class="padding-text portofolio-desc animated hide-it first">
-                        What I like about drawing is that it allows me to express
-                        my imagination and creativity. The incredible amount of
-                        existing tools dedicated to drawing offer a lot of creative
-                        possibilities.
-                    </p>
-                </div>
-                <div class="col-sm-4 ">
-                    <img src="images/icons/graphism-icon.svg" class="portofolio-icon animated hide-it second">
-                    <h3 class="portofolio-subtitle animated hide-it second">Graphism</h3>
-                    <p class="padding-text portofolio-desc animated hide-it second">
-                        I like graphic artwork in cartoon, tattoo or comic style
-                        or the one that imitate old advertissment. I like bright colors
-                        and strong contrast and I try to express it in my creation.
-                    </p>
-                </div>
-            </div>
-            <a class="btn portofolio-desc animated hide-it fourth" href="portofolio.html">Discover my artworks</a>
-            </div>
-        </div>
-
-        <div class="home-contact-container home-container-padding contact green-bg shadowed-bottom">
-            <h3 class="contact-title animated hide-it">Don't loose a seconds and contact me!</h3>
-            <hr class="contact-title animated hide-it">
-            <a class="btn contact-desc animated first hide-it" href="contact.html">Contact me</a>
-        </div>
-
-        <div class="footer-exhibitionist"></div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-container-inner">
-                    <row class="footer-container-brand">
-                        <img src="images/icons/home-icon-white.svg">
-                        <h4><span class="light">Dimitri</span> Drouet</h4>
-                    </row>
-                    <row class="footer-container-brand">
-                        <a class="top active" href="#">Home</a>
-                        <a href="curriculum-vitae.html">Curriculum Vitae</a>
-                        <a href="project.html">Projects</a>
-                        <a href="portofolio.html">Portofolio</a>
-                        <a href="contact.html">Contact</a>
-                    </row>
-                    <p>©Dimitri Drouet. All rights reserved. 
-                        | Created with<a class="created-link" href="http://getbootstrap.com/">Bootstrap.</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <!-- Bootstrap core JavaScript -->
-        <!-- ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
-        <script src="js/bootstrap.min.js" type="text/javascript"></script>
-        <script src="js/jquery.inview.min.js" type="text/javascript"></script>
-        <script src="js/general.js" type="text/javascript"></script>
-        <script src="js/home.js" type="text/javascript"></script>
     </body>
 </html>
