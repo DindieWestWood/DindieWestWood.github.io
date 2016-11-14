@@ -18,9 +18,8 @@ body {
     width: inherit;
     height: inherit;
     overflow-x: hidden;
-    
     background-attachment: fixed;
-    background-color: #BDBDBD;
+    background-color: #9E9E9E;
     background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
     background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
@@ -31,4 +30,178 @@ body {
     color: #FFFFFF;
     cursor: url(/images/cursors/cursor.png), auto;
     font-family: gilroy;
+}
+
+.navbar {
+    display: table;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.container-fluid {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+.navbar-brand {
+    display: table;
+    padding: 0px 20px;
+}
+
+.navbar-brand img {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 40px;
+}
+
+.navbar-brand a {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.nav {
+    margin-right: 15px;
+}
+
+.navbar-default .nav > li > a,
+.navbar-default .nav > li > a:focus {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    text-shadow: none;
+}
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus:hover {
+    color: #FFFFFF;
+    -o-transition: color .35s;
+    -webkit-transition: color .35s;
+    -moz-transition: color .35s;
+    transition: color .35s;
+}
+.navbar-default .nav > li.active > a,
+.navbar-default .nav > li.active > a:focus {
+    color: rgba(255, 255? 255, .8) !important;
+    background-color: transparent;
+    -o-transition: color .35s;
+    -webkit-transition: color .35s;
+    -moz-transition: color .35s;
+    transition: color .35s;
+}
+.navbar-default .nav > li.active > a:hover,
+.navbar-default .nav > li.active > a:focus:hover {
+    background-color: transparent;
+    color: #FFFFFF;
+    -o-transition: color .35s;
+    -webkit-transition: color .35s;
+    -moz-transition: color .35s;
+    transition: color .35s;
+}
+
+a, a:focus {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    text-shadow: none;
+}
+
+a:hover, a:focus:hover {
+    cursor: url('/images/cursors/cursor-pointer.png'), pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.container-custom {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+}
+
+.container-inner-custom {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.collapsed-menu {
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    -o-transition: background .35s;
+    -webkit-transition: background .35s;
+    -moz-transition: background .35s;
+    transition: background .35s;
+}
+
+.collapsed-menu h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 60px;
+    height: 60px; 
+
+    transition: transform 0.35s;
+}
+
+.menu-icon {
+    cursor: url('/images/cursors/cursor-pointer.png'), pointer;
+}
+
+.menu-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+
+    display: block;
+    width: 22px;
+    height: 3px;
+
+    background-color: #FFFFFF;
+
+    transition: background 0.35s;
+}
+
+.menu-icon span::before, .menu-icon span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-8px);
+
+    display: block;
+    width: 22px;
+    height: 3px;
+
+    background-color: #FFFFFF;
+
+    transition: transform 0.35s;
+}
+.menu-icon span::after {
+    transform: translateY(8px); 
+}
+
+.menu-icon.is-opened span { background: transparent; }
+.menu-icon.is-opened span::before { transform: translateY(0) rotate(45deg); }
+.menu-icon.is-opened span::after { transform: translateY(0) rotate(-45deg); }
+.menu-icon.is-opened { transform: rotate(180deg); }
+
+.hidden-custom {
+    display: none;
 }
