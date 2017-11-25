@@ -4,7 +4,7 @@ http://dindiewestwood.github.io/
 @version 1.0
 ------------------------------------------------------------------------------->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <!-- Meta Data -->
@@ -16,6 +16,7 @@ http://dindiewestwood.github.io/
 
         <title>DIMITRI DROUET</title>
         <link rel="shortcut icon" href="images/logos/logo-title.png" type="image/png"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 
         <!-- CSS -->
         <!-- Bootstrap -->
@@ -24,85 +25,499 @@ http://dindiewestwood.github.io/
         <!-- Personnalisée(s) -->
         <link href="css/stylesheet.css" rel="stylesheet">
         
-        <!-- JavaScript -->
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/animated-menu.js"></script>
-        
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <!--[endif]-->
     </head>
-    
+
     <body>
-        <nav id="navbar" class="navbar navbar-default navbar-fixed-top top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="navbar-brand scrolling-btn" data-id="top">
-                        <a><img alt="logo navigation bar" src="images/logos/logo.png"></a>
-                        <a>DIMITRI DROUET</a>
-                    </div>
-                </div>
-                <ul class="nav navbar-nav navbar-right hidden-xs">
-                    <li><a class="scrolling-btn" data-id="#home-top">Home</a></li>
-                    <li><a class="scrolling-btn" data-id="#CV-top">CV</a></li>
-                    <li><a class="scrolling-btn" data-id="#project-top">Project</a></li>
-                    <li><a class="scrolling-btn" data-id="#portofolio">Portofolio</a></li>
-                    <li><a class="scrolling-btn" data-id="#contact">Contact</a></li>
-                </ul>
-                <div class="menu-icon visible-xs">
-                    <span></span>
+        <nav id="navbar" class="navbar navbar-expand-md navbar-dark navbar-right fixed-top navbar-custom">
+            <div class="navbar-header">
+                <div class="navbar-brand top menu-btn">
+                    <a href="#"><img alt="logo navigation bar" src="images/logos/logo.png"></a>
+                    <a href="#">DIMITRI DROUET</a>
                 </div>
             </div>
-                
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li id="home-nav" class="nav-item top active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li id="cv-nav" class="nav-item scrolling-btn" data-id="#cv-top">
+                        <a class="nav-link" href="#cv-top">CV</a>
+                    </li>
+                    <li id="projects-nav" class="nav-item scrolling-btn" data-id="#projects-top">
+                        <a class="nav-link" href="#projects-top">Projects</a>
+                    </li>
+                    <li id="portfolio-nav" class="nav-item scrolling-btn" data-id="#portfolio-top">
+                        <a class="nav-link" href="#portfolio-top">Portfolio</a>
+                    </li>
+                    <li id="contact-nav" class="nav-item scrolling-btn" data-id="#contact-top">
+                        <a class="nav-link" href="#contact-top">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <div class="collapsed-menu absolute hidden-custom">
-            <div class="container-custom ">
-                <div class="container-inner-custom">
-                    <h1><a class="scrolling-btn" data-id="#home-top">Home</a></h1>
-                    <h1><a class="scrolling-btn" data-id="#CV-top">CV</a></li>
-                    <h1><a class="scrolling-btn" data-id="#project-top">Project</a></h1>
-                    <h1><a class="scrolling-btn" data-id="#portofolio">Portofolio</a></h1>
-                    <h1><a class="scrolling-btn" data-id="#contact">Contact</a></h1>
+        
+        <img id="profile-picture" class="profile-picture sticky-container" src="images/profile-picture.png"/>
+        <diV id="skills" class="sticky-container container-custom navbar-padding">
+            <div id="skills-inner" class="row align-items-center container-inner-custom">
+                <div class="col">
+                    <h3>Programming Skills</h3>
+                    <div class="jumbotron skills">
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                C#
+                            </div>
+                            <div class="col-4">
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot not-selected"></div>                          
+                            </div>
+                            <div class="col-2">
+                                Java
+                            </div>
+                            <div class="col-4">
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot not-selected"></div>                          
+                            </div>
+                            <div class="col-2">
+                                Web
+                            </div>
+                            <div class="col-4">
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot not-selected"></div>
+                                <div class="dot not-selected"></div> 
+                            </div>
+                            <div class="col-2">
+                                C/C++
+                            </div>
+                            <div class="col-4">
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot selected"></div>
+                                <div class="dot not-selected"></div>
+                                <div class="dot not-selected"></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <h3>Design Skills</h3>
+                            <div class="jumbotron skills">
+                                <div class="row align-items-center">
+                                    <div class="col-4">
+                                        Illustrator
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="dot selected"></div>
+                                        <div class="dot selected"></div>
+                                        <div class="dot selected"></div>
+                                        <div class="dot selected"></div>
+                                        <div class="dot not-selected"></div> 
+                                    </div>
+                                    <div class="col-4">
+                                        Gimp
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="dot selected"></div>
+                                        <div class="dot selected"></div>
+                                        <div class="dot selected"></div>
+                                        <div class="dot not-selected"></div>
+                                        <div class="dot not-selected"></div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>Language</h3>
+                            <div class="jumbotron skills">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        French (native)
+                                    </div>
+                                    <div class="col-12">
+                                        English
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Human Computer Interaction Skills</h3>
+                    <div class="jumbotron skills">
+                        <div class="row align-items-center">
+                            <div class="col-6">
+                                User Experience Evaluation
+                            </div>
+                            <div class="col-6">
+                                Prototyping
+                            </div>
+                            <div class="col-6">
+                                User Center Design
+                            </div>
+                            <div class="col-6">
+                                Heuristic Evaluation
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </diV>
+        
+        
+        <div id="cover" class="container-custom">
+            <div class="row align-items-center container-inner-custom">
+                <div class="col-md-5 offset-md-6">
+                    <div class="title">
+                        <h1>DIMITRI <img src="images/logos/logo.png"/> DROUET</h1>
+                        <h2>User Experience Designer</h2>
+                    </div>
+                    <h3>Quick Access</h3>
+                    <div class="quick-access jumbotron">
+                        <div class="row">
+                            <div class="col-6 col-sm-3 scrolling-btn" data-id="#cv-top">
+                                <a href="#cv-top">
+                                    <img class="icon" src="images/icon/cv-icon-01.svg"/>
+                                    <p>CV</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 scrolling-btn" data-id="#projects-top">
+                                <a href="#projects-top">
+                                    <img src="images/icon/projects-icon-01.svg"/>
+                                    <p>Projects</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 scrolling-btn" data-id="#portfolio-top">
+                                <a href="#portfolio-top">
+                                    <img src="images/icon/research-icon-01.svg"/>
+                                    <p>Portfolio</p>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-3 scrolling-btn" data-id="#contact-top">
+                                <a href="#contact-top">
+                                    <img src="images/icon/contact-01.svg"/>
+                                    <p>Contact</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrolling-btn cover-btn" data-id="#cv-top">
+                        <a href="#cv-top">
+                            <p>Scroll or Click</p>
+                            <img  src="images/icon/scoll-btn-01.svg"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!--<nav id="navbar top" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="menu-section">
-                    <div class="menu-toggle">
-                        <div class="one"></div>
-                        <div class="two"></div>
-                        <div class="three"></div>
+        
+        <div id="cv-top" class="container-custom navbar-padding">
+            <div class="row container-inner-custom">
+                <div class="col-md-5 offset-md-6">
+                    <h3>About Me</h3>
+                    <div class="jumbotron">
+                        <p class="justified">I graduated in september 2016, from
+                            l'École Nationale de L'Aviation Civile (National 
+                            School of Civil Aviation). I studied in the field 
+                            of Human Computer Interaction (HCI). I choosed this 
+                            field because I truly believe it is the closest way 
+                            for computer engineers to improve the daily life of 
+                            users and consumers. 
+                        </p>
+                        <p class="justified">Since 2011 I live in Toulouse 
+                            (France), known as the “pink city”. I work there 
+                            since I graduated, as a research engineer for ruwido, 
+                            a remote control manufacturer. I’m also sharing my 
+                            knowledge in HCI in several University and 
+                            Engineering School around the city.
+                        </p>
                     </div>
-                    <nav>
-                        <ul role="navigation" class="hidden">
-                            <li><a class="scrolling-btn" data-id="#home-top">Home</a></li>
-                            <li><a class="scrolling-btn" data-id="#CV-top">CV</a></li>
-                            <li><a class="scrolling-btn" data-id="#project-top">Project</a></li>
-                            <li><a class="scrolling-btn" data-id="#portofolio">Portofolio</a></li>
-                            <li><a class="scrolling-btn" data-id="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="navbar-header">
-                    <a class="navbar-brand scrolling-btn" data-id="top">
-                        <img src="images/logos/logo.png"/>
-                        DIMITRI DROUET
-                    </a>
-                </div>
-                
-                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class="scrolling-btn" data-id="#home-top">Home</a></li>
-                        <li><a class="scrolling-btn" data-id="#CV-top">CV</a></li>
-                        <li><a class="scrolling-btn" data-id="#project-top">Project</a></li>
-                        <li><a class="scrolling-btn" data-id="#portofolio">Portofolio</a></li>
-                        <li><a class="scrolling-btn" data-id="#contact">Contact</a></li>
-                    </ul>
+                    <h3>Schooling</h3>
+                    <div class="cv">
+                        <h1>2016 - </h1>
+                        <h2>PhD in User Experience</h2>
+                        <p>Université Toulouse III - Paul Sabatier</p>
+                        <div class="line"></div>
+                        <h1>2014 - 2016</h1>
+                        <h2>Master in Human Computer Interaction</h2>
+                        <p>École National de l’Aviation Civile (ENAC)</p>
+                        <div class="line"></div>
+                        <h1>2011 - 2014</h1>
+                        <h2>Bachelor in Computer Science</h2>
+                        <p>Université Toulouse III - Paul Sabatier</p>
+                        <div class="line"></div>
+                        <h1>2008 - 2011</h1>
+                        <h2>Baccalauréat  série S</h2>
+                        <p>Lycée Français de Hambourg - Antoine de Saint-Exupéry</p>
+                    </div>
                 </div>
             </div>
-        </nav>-->
-    </body>
+        </div>
+        
+        <div id="cv-bottom" class="container-custom navbar-padding">
+            <div class="row container-inner-custom">
+                <div class="col-md-5 offset-md-6">
+                    <h3>Experience</h3>
+                    <div class="cv">
+                        <h1>Nov 2016 - </h1>
+                        <h2>UT3/ENSEEIT/IUT Rangueil - Teaching HCI</h2>
+                        <p>Prototyping, Interactive System Development, User Experience</p>
+                        <div class="line"></div>
+                        <h1>Sep 2016 - </h1>
+                        <h2>ruwido France - Research Engineer</h2>
+                        <p>User Experience Design</p>
+                        <div class="line"></div>
+                        <h1>Mar 2016 - Sep 2016</h1>
+                        <h2>ruwido France - Internship in User Experience Research</h2>
+                        <p>Enhancing Interaction Mechanisms for Interactive Television Control</p>
+                        <div class="line"></div>
+                        <h1>Apr 2014 - Jun 2014</h1>
+                        <h2>IRIT - Computer Science Intership</h2>
+                        <p>Graphical User Interface and Ergonomics Ameliorations of a Visualisation Tool</p>
+                    </div>
+                    
+                    <diV class="container-custom navbar-padding hidden-sm hidden-md hidden-lg">
+                        <div class="row align-items-center container-inner-custom">
+                            <div class="col">
+                                <h3>Programming Skills</h3>
+                                <div class="jumbotron skills">
+                                    <div class="row align-items-center">
+                                        <div class="col-2">
+                                            C#
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot not-selected"></div>                          
+                                        </div>
+                                        <div class="col-2">
+                                            Java
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot not-selected"></div>                          
+                                        </div>
+                                        <div class="col-2">
+                                            Web
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot not-selected"></div>
+                                            <div class="dot not-selected"></div> 
+                                        </div>
+                                        <div class="col-2">
+                                            C/C++
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot selected"></div>
+                                            <div class="dot not-selected"></div>
+                                            <div class="dot not-selected"></div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h3>Design Skills</h3>
+                                        <div class="jumbotron skills">
+                                            <div class="row align-items-center">
+                                                <div class="col-4">
+                                                    Illustrator
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot not-selected"></div> 
+                                                </div>
+                                                <div class="col-4">
+                                                    Gimp
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot selected"></div>
+                                                    <div class="dot not-selected"></div>
+                                                    <div class="dot not-selected"></div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <h3>Language</h3>
+                                        <div class="jumbotron skills">
+                                            <div class="row align-items-center">
+                                                <div class="col-12">
+                                                    French (native)
+                                                </div>
+                                                <div class="col-12">
+                                                    English
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Human Computer Interaction Skills</h3>
+                                <div class="jumbotron skills">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            User Experience Evaluation
+                                        </div>
+                                        <div class="col-6">
+                                            Prototyping
+                                        </div>
+                                        <div class="col-6">
+                                            User Center Design
+                                        </div>
+                                        <div class="col-6">
+                                            Heuristic Evaluation
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </diV>
+                    
+                    <div class="row social-media-container">
+                        <div class="col-2 offset-2">
+                            <a href="https://www.behance.net/drouetdimi4114" target="_blank">
+                                <img src="images/icon/behance-icon.svg"/>
+                            </a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://www.linkedin.com/in/dimitri-drouet-927bb19b/" target="_blank">
+                                <img src="images/icon/linked-in-icon.svg"/>
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <a href="https://twitter.com/DrouetDimitri" target="_blank">
+                                <img src="images/icon/twitter-icon.svg"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <a class="btn" href="download/cv_dimitri_drouet.pdf" target="_blank">
+                            CV in PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects-top" class="navbar-padding row align-items-center">
+            <div class="col-12 title">
+                <h1>Projects</h1>
+            </div>
+            <div class="col-sm-12 col-md-4 overlay overlay-project" data-id="#byblos">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/byblos.png" alt="Byblos Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Byblos</h4>
+                        <p class="card-text">A puzzle game for mobile devices</p>
+                        <a href="#project" class="btn-card">More +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 overlay overlay-project" data-id="#circle">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/circle.png" alt="Circle UI Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Circle UI</h4>
+                        <p class="card-text">A circular interactive TV interface</p>
+                        <a href="#project" class="btn-card">More +</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 overlay overlay-project" data-id="#radiowilson">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/radiowilson.png" alt="Radio Wilson Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Radio Wilson</h4>
+                        <p class="card-text">A website of independant podcasts</p>
+                        <a href="#project" class="btn-card">More +</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio-top" class="navbar-padding container-custom">
+            <div class="container-inner-custom">
+                <div class="row align-items-center">
+                    <div class="col-12 title">
+                        <h1>Portfolio</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact-top" class="navbar-padding row align-items-center">
+            <div class="col-12 title">
+                <h1>Contact</h1>
+            </div>
+            <div class="col-sm-12 col-md-4 overlay">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/phone.png" alt="Byblos Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Phone</h4>
+                        <p class="card-text">+33 760 399 788</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 overlay">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/email.PNG" alt="Circle UI Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Email</h4>
+                        <p class="card-text">drouet.dimitri@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 overlay" data-id="#radiowilson">
+                <div class="card" >
+                    <img class="card-img-top" src="images/thumbnails/socialnetwork.png" alt="Radio Wilson Thumbnails">
+                    <div class="card-block">
+                        <h4 class="card-title">Social Networks</h4>
+                        <a href="https://www.behance.net/drouetdimi4114" target="_blank">
+                            <img class="social" src="images/icon/behance-icon.svg"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dimitri-drouet-927bb19b/" target="_blank">
+                            <img class="social" src="images/icon/linked-in-icon.svg"/>
+                        </a>
+                        <a href="https://twitter.com/DrouetDimitri" target="_blank">
+                            <img class="social" src="images/icon/twitter-icon.svg"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
 </html>
+
+        

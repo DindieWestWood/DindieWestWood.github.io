@@ -6,22 +6,27 @@ $(document).ready(function () {
         e.preventDefault();
         if ($(this).hasClass('is-opened')) {
             $(this).addClass('is-closed').removeClass('is-opened');
-            $('.collapsed-menu').fadeOut(350);
+            $('.collapsed-menu').fadeOut(200);
             open = false;
         } else {
             $(this).removeClass('is-closed').addClass('is-opened');
-            $('.collapsed-menu').fadeIn(350);
+            $('.collapsed-menu').fadeIn(400);
             open = true;
         }
     });
     
-    $(window).resize(function () {
-        var ww = $(window).width();
-        if (ww > 768) {
-            $('.collapsed-menu').fadeOut(350);
-        }
-        if (ww < 768 && open) {
-            $('.collapsed-menu').fadeIn(350);
+    $('.menu-btn').click(function (e) {
+        e.preventDefault();
+        if ($('.menu-icon').hasClass('is-opened')) {
+            $('.menu-icon').addClass('is-closed').removeClass('is-opened');
+            $('.collapsed-menu').fadeOut(200);
+            open = false;
+        } else {
+            $('.menu-icon').removeClass('is-closed').addClass('is-opened');
+            $('.collapsed-menu').fadeIn(400);
+            open = true;
         }
     });
+    
+    
 });
