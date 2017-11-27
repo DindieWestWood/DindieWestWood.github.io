@@ -445,7 +445,7 @@ http://dindiewestwood.github.io/
                     <div class="card-block">
                         <h4 class="card-title">Circle UI</h4>
                         <p class="card-text">A circular interactive TV interface</p>
-                        <a href="#project" class="btn-card">More +</a>
+                        <a href="#project" class="btn-card" data-toggle="modal" data-target="#circle-modal">More +</a>
                     </div>
                 </div>
             </div>
@@ -455,7 +455,7 @@ http://dindiewestwood.github.io/
                     <div class="card-block">
                         <h4 class="card-title">Radio Wilson</h4>
                         <p class="card-text">A website of independant podcasts</p>
-                        <a href="#project" class="btn-card">More +</a>
+                        <a href="#project" class="btn-card" data-toggle="modal" data-target="#radiowilson-modal">More +</a>
                     </div>
                 </div>
             </div>
@@ -490,7 +490,25 @@ http://dindiewestwood.github.io/
                             <div class="col-md-6">
                                 <h2>Byblos</h2>
                                 <h3>Description</h3>
-                                <p>A game engine is a software framework designed for the creation and development of video games. Developers use them to create games for consoles, mobile devices and personal computers. The core functionality typically provided by a game engine includes a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, animation, artificial intelligence, networking, streaming, memory management, threading, localization support, scene graph, and may include video support for cinematics. The process of game development is often economized, in large part, by reusing/adapting the same game engine to create different games, or to make it easier to port games to multiple platforms</p>
+                                <p>
+                                    Byblos is a puzzle game for mobile devices 
+                                    (Android). The purpose of the game is 
+                                    simple, the player has to move spheres on 
+                                    corresponding tiles (identified with symbols),
+                                    in a limited amount of time. The player can
+                                    only move up, right, down or left. If there 
+                                    is several spheres on the board they are 
+                                    moving altogether. Throughout the game,
+                                    some obstacles and special tiles will appear.
+                                </p>
+                                <p>
+                                    This project is currently in development
+                                    since a year. We are a small team: 2 
+                                    developers (myself included) and a composer, 
+                                    and we are developing on our spare time. We 
+                                    expect to release the game during the upcoming
+                                    year. 
+                                </p>
                                 <h3>Technologies</h3>
                                 <p>C# (Unity3d), Adobe Illustrator</p>
                             </div>
@@ -503,19 +521,95 @@ http://dindiewestwood.github.io/
             </div>
         </div>
 
-        <!--<div class="modal fade" id="byblos-modal" tabindex="-1" role="dialog" aria-labelledby="byblos-title" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+        <div class="modal fade" id="circle-modal" tabindex="-1" role="dialog" aria-labelledby="circle-title" aria-hidden="true">
+            <div class="modal-dialog modal-overlay" role="document">
                 <div class="modal-content">
-                    <div class="modal-body">
-                        <h5 class="modal-title" id="byblos-title">Byblos</h5>
+                    <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="img-fluid img-main" id="circle-image" src="images/projects/circle-main-menu.png"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li class="active"><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/circle-main-menu-thumbnail.png" data-target="circle-image" data-large="images/projects/circle-main-menu.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-main-menu-thumbnail.png" data-target="cirle-image" data-large="images/projects/byblos-main-menu.png"/></a></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Circle UI</h2>
+                                <h3>Description</h3>
+                                <p>
+                                    Circle UI is an interactive TV interface concept.  
+                                    
+                                </p>
+                                <p>
+                                    
+                                </p>
+                                <h3>Technologies</h3>
+                                <p>Adobe Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
                         <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
+
+        <div class="modal fade" id="radiowilson-modal" tabindex="-1" role="dialog" aria-labelledby="radiowilson-title" aria-hidden="true">
+            <div class="modal-dialog modal-overlay" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img class="img-fluid img-main" id="radiowilson-image" src="images/projects/circle-main-menu.png"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul>
+                                            <li class="active"><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/circle-main-menu-thumbnail.png" data-target="radiowilson-image" data-large="images/projects/circle-main-menu.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-main-menu-thumbnail.png" data-target="radiowilson-image" data-large="images/projects/byblos-main-menu.png"/></a></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Radio Wilson</h2>
+                                <h3>Description</h3>
+                                <p>
+                                    Radio Wilson is an interactive TV interface concept.  
+                                    
+                                </p>
+                                <p>
+                                    
+                                </p>
+                                <h3>Technologies</h3>
+                                <p>HTML, CSS, Javascript, Bootstrap, Adobe Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div id="portfolio-top" class="navbar-padding container-custom">
             <div class="container-inner-custom">
