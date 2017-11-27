@@ -424,6 +424,7 @@ http://dindiewestwood.github.io/
                 </div>
             </div>
         </div>
+
         <div id="projects-top" class="navbar-padding row align-items-center">
             <div class="col-12 title">
                 <h1>Projects</h1>
@@ -434,7 +435,7 @@ http://dindiewestwood.github.io/
                     <div class="card-block">
                         <h4 class="card-title">Byblos</h4>
                         <p class="card-text">A puzzle game for mobile devices</p>
-                        <a href="#project" class="btn-card">More +</a>
+                        <a href="#project-top" class="btn-card" data-toggle="modal" data-target="#byblos-modal">More +</a>
                     </div>
                 </div>
             </div>
@@ -459,6 +460,63 @@ http://dindiewestwood.github.io/
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="byblos-modal" tabindex="-1" role="dialog" aria-labelledby="byblos-title" aria-hidden="true">
+            <div class="modal-dialog modal-overlay" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <img class="img-fluid img-main" id="byblos-image" src="images/projects/byblos-splashscreen.png"/>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <ul>
+                                            <li class="active"><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-splashscreen-thumbnail.png" data-target="byblos-image" data-large="images/projects/byblos-splashscreen.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-main-menu-thumbnail.png" data-target="byblos-image" data-large="images/projects/byblos-main-menu.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-stages-menu-thumbnail.png" data-target="byblos-image" data-large="images/projects/byblos-stages-menu.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-level-menu-thumbnail.png" data-target="byblos-image" data-large="images/projects/byblos-level-menu.png"/></a></li>
+                                            <li><a href="#"><img class="img-fluid thumb" src="images/projects/thumbnails/byblos-pause-menu-thumbnail.png" data-target="byblos-image" data-large="images/projects/byblos-pause-menu.png"/></a></li>
+                                        </ul>
+                                    </div>
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h2>Byblos</h2>
+                                <h3>Description</h3>
+                                <p>A game engine is a software framework designed for the creation and development of video games. Developers use them to create games for consoles, mobile devices and personal computers. The core functionality typically provided by a game engine includes a rendering engine ("renderer") for 2D or 3D graphics, a physics engine or collision detection (and collision response), sound, scripting, animation, artificial intelligence, networking, streaming, memory management, threading, localization support, scene graph, and may include video support for cinematics. The process of game development is often economized, in large part, by reusing/adapting the same game engine to create different games, or to make it easier to port games to multiple platforms</p>
+                                <h3>Technologies</h3>
+                                <p>C# (Unity3d), Adobe Illustrator</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="modal fade" id="byblos-modal" tabindex="-1" role="dialog" aria-labelledby="byblos-title" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="modal-title" id="byblos-title">Byblos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
         <div id="portfolio-top" class="navbar-padding container-custom">
             <div class="container-inner-custom">
                 <div class="row align-items-center">
@@ -508,15 +566,16 @@ http://dindiewestwood.github.io/
                 </div>
             </div>
         </div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/scroll.js"></script>
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/scroll.js"></script>
+        <script src="js/interactivity.js"></script>
   </body>
 </html>
 

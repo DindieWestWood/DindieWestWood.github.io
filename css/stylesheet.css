@@ -201,10 +201,9 @@ p {
 
 
 .btn {
-    background-color: rgba(255, 255, 255, 0);
-    border: solid 2px rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 100px;
-    padding: 2% 10% 2% 10%;
+    padding: 10px 15px 10px 15px;
     text-align: center;
     color: white;
     margin-top: 20px;
@@ -215,8 +214,87 @@ p {
 .btn:hover,
 .btn:focus{
     background-color: rgba(255, 255, 255, 0.2);
-    border: solid 2px rgba(255, 255, 255, 0);
     color: white;
+}
+
+.btn-dark {
+	background-color: rgba(0, 0, 0, 0.3);
+	border: none;
+	color: black;
+}
+
+.btn-dark:hover,
+.btn-dark:focus{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: black;
+}
+
+.modal-overlay {
+	width: 90%;
+	max-width: 90%;
+	margin: 5% auto auto auto;
+	pointer-events: none;
+}
+
+.modal-header,
+.modal-footer {
+	border: none;
+}
+
+.modal-body {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.modal-body img{
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+	margin-bottom: 10px;
+}
+
+.modal-body ul {
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin-bottom; 10px;
+	
+}
+
+.modal-body li {
+	margin:5px;
+	display: inline-block;
+}
+
+.img-main {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60%;
+	display: flex;
+}
+
+.thumb {
+	width: 42px;
+	height: auto;
+}
+
+.active img{
+	border: 3px solid #57dccb;
+}
+
+.modal-content{
+	background-attachment: fixed;
+    background-color: #FFFFFF;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,rgbargba(0, 0, 0, .2), rgbargba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgbargba(0, 0, 0, .2), rgbargba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    -ms-background-size: 20px 20px;
+    background-size: 20px 20px;
+    color: black;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    
 }
 
 .btn-container {
