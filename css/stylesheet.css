@@ -249,12 +249,14 @@ p {
 	padding-right: 5%;
 }
 
-.modal-body img{
+.modal-body img,
+.gallery img {
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
 	margin-bottom: 10px;
 }
 
-.modal-body ul {
+.modal-body ul,
+.gallery ul {
 	list-style: none;
 	display: block;
 	padding: 0;
@@ -262,17 +264,77 @@ p {
 	
 }
 
-.modal-body li {
+.modal-body li,
+.gallery li {
 	margin:5px;
 	display: inline-block;
 }
 
-.img-main {
+.gallery {
+	height: 0%;
+    width: 100%;
+	max-width = 100%;
+    max-height = 100%;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+	bottom: 0;
+    left: 0;
+	right:0;
+    background-color: #FFFFFF;
+    background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,rgbargba(0, 0, 0, .2), rgbargba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    background-image: repeating-radial-gradient(center center, rgbargba(0, 0, 0, .2), rgbargba(0, 0, 0, .2) 1px, transparent 1px, transparent 100%);
+    -webkit-background-size: 20px 20px;
+    -moz-background-size: 20px 20px;
+    -ms-background-size: 20px 20px;
+    background-size: 20px 20px;
+    color: black;
+	overflow-y: hidden;
+    transition: 0.4s;
+}
+
+.gallery-header{
+	position: absolute;
+    top: 20px;
+	right: 40px;
+	left:40px;
+	left: 0;
 	margin-left: auto;
 	margin-right: auto;
-	max-height: 70%;
-    max-width: 100%;
-	display: flex;
+	height: 100px;
+	text-align: right;
+}
+
+.gallery-footer{
+	position: absolute;
+    bottom: 20px;
+	right: 20px;
+	left: 20px;
+	height: 60px;
+	text-align: center;
+}
+
+.gallery-content {
+	position: absolute;
+    bottom: 100px;
+	right: 100px;
+	left: 100px;
+	top: 20px;
+	
+	border: 2px solid red;
+}
+
+.gallery-close-btn{
+	
+    font-size: 60px;
+	cursor: pointer;
+}
+
+.gallery-img {
+	max-height: 100%;
+	width: auto;
 }
 
 .thumb {

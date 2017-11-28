@@ -5,15 +5,39 @@ $(document).ready(function () {
 	function changeImage(obj,img) {
 		obj.src = img;
 	}
+
+	function thumbToMax(target, large) {
+		changeImage(document.getElementById(target), large);
+	}
+
+	function showGallery() {
+		$(document.getElementById("gallery-thumb-container")).children().removeClass("active");
+		document.getElementById("gallery").style.height = "100%";
+	}
+
+	function hideGallery(){
+		document.getElementById("gallery").style.height = "0%";
+	}
     
 	 $('.thumb').click(function () {
 		var target = $(this).attr("data-target");
 		var large = $(this).attr("data-large");
-		changeImage(document.getElementById(target), large);
+		thumbToMax(target, large);
 		$(this).parent().parent().parent().children().removeClass("active");
 		$(this).parent().parent().addClass("active");
     });
 
+	$('.gallery-thumbnail').click(function () {
+		var id = $(this).attr("data-id");
+		var target = $(document.getElementById(id)).attr("data-target");
+		var large = $(document.getElementById(id)).attr("data-large");
+		showGallery();
+		thumbToMax(target, large);
+		$(id).parent().parent().addClass("active");
+	});
 
+	$('.gallery-close-btn').click(function () {
+		hideGallery();
+	});
 
 });
