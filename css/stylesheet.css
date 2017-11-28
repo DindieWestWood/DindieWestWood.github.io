@@ -297,31 +297,29 @@ p {
 
 .gallery-header{
 	position: absolute;
-    top: 20px;
-	right: 40px;
-	left:40px;
+    top: 2%;
+	right: 3%;
+	left: 3%;
 	left: 0;
 	margin-left: auto;
 	margin-right: auto;
-	height: 100px;
 	text-align: right;
 }
 
 .gallery-footer{
 	position: absolute;
-    bottom: 20px;
-	right: 20px;
-	left: 20px;
-	height: 60px;
+    bottom: 2%;
+	right: 3%px;
+	left: 3%px;
 	text-align: center;
 }
 
 .gallery-content {
 	position: absolute;
-    bottom: 100px;
-	right: 100px;
-	left: 100px;
-	top: 20px;
+    bottom: 5%;
+	right: 3%;
+	left: 3%;
+	top: 5%;
 	text-align: center;
 }
 
@@ -333,14 +331,14 @@ p {
 
 .gallery-img {
 	max-height: 100%;
-	width: auto;
-	height: 100%;
+	max-width: 100%;
+	height: auto;
 	margin-right:auto;
 	margin-left:auto;
 }
 
 .thumb {
-	width: 42px;
+	width: 24px;
 	height: auto;
 }
 
@@ -424,6 +422,7 @@ p {
 .cover-btn {
     opacity: .67;
     text-align: center;
+    cursor: pointer;
 }
 
 .cover-btn:hover {
@@ -533,10 +532,6 @@ p {
     
     .social-media-container img { width: 36px; }
     
-    .dot {
-        height: 10px;
-        width: 10px;
-    }
 
 }
 
@@ -563,7 +558,7 @@ p {
 
     .jumbotron img { width: 48px; }
     
-    .sticky-container { visibility: visible; }
+    
     
     .cv h1 { font-size: 20px; }
 
@@ -573,10 +568,6 @@ p {
     
     .social-media-container img { width: 40px; }
     
-    .dot {
-        height: 12px;
-        width: 12px;
-    }
     
     .overlay {
         padding: 5%;
@@ -604,7 +595,7 @@ p {
 
     .jumbotron img { width: 54px; }
     
-    .sticky-container { left: 8.33%; }
+    .sticky-container { visibility: visible; left: 8.33%; }
     
     .cv h1 { font-size: 22px; }
 
@@ -612,7 +603,9 @@ p {
     
     .social-media-container img { width: 44px; }
     
-    
+    .thumb {
+	   width: 36px;
+    }
 }
 
 /* Extra Large devices (large desktops, 1200px and up) */

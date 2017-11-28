@@ -33,7 +33,7 @@ $(document).ready(function () {
 		var large = $(document.getElementById(id)).attr("data-large");
 		showGallery();
 		thumbToMax(target, large);
-		$(id).parent().addClass("active");
+		$(document.getElementById(id)).parent().addClass("active");
 	});
 
 	$('.gallery-close-btn').click(function () {

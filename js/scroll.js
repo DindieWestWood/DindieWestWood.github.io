@@ -3,7 +3,7 @@
 $(document).ready(function () {
     "use strict";
     
-    var coverdist, cvtopdist, cvbottomdist, projectsdist, portfoliodist, skilldist;
+    var coverdist, cvtopdist, cvbottomdist, projectsdist, portfoliodist;
 
     function initializeDistances() {
         coverdist = $('#cover').height();
@@ -11,7 +11,6 @@ $(document).ready(function () {
         cvbottomdist = cvtopdist + $('#cv-bottom').height();
         projectsdist = cvbottomdist + $('#projects-top').height();
         portfoliodist = projectsdist + $('#portfolio-top').height();
-        skilldist = $('#skills-inner').height();
     }
     
     function updateActiveNavItem(positionTop) {
@@ -49,19 +48,8 @@ $(document).ready(function () {
     }
     
     function onScroll(positionTop) {
-        var startingPoint = (coverdist + ((cvtopdist - coverdist) / 2)),
-            endingPoint = (cvbottomdist - skilldist + 70),
-            fadeInPoint = (((endingPoint - startingPoint) / 4) + startingPoint),
-            fadeOutPoint = (((3 * (endingPoint - startingPoint)) / 4) + startingPoint);
         $('#navbar').fadeTo(0, (positionTop / coverdist));
         $('#profile-picture').fadeTo(0, 1 - ((positionTop - coverdist) / ((cvtopdist - coverdist) / 2)));
-        if (positionTop < fadeInPoint) {
-            $('#skills').fadeTo(0, ((positionTop - startingPoint) / (fadeInPoint - startingPoint)));
-        } else if (positionTop > fadeOutPoint) {
-            $('#skills').fadeTo(0, 1 - ((positionTop - fadeOutPoint) / (endingPoint - fadeOutPoint)));
-        } else {
-            $('#skills').fadeTo(0, 1);
-        }
         updateActiveNavItem(positionTop);
     }
     
