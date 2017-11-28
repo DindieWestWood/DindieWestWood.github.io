@@ -322,8 +322,7 @@ p {
 	right: 100px;
 	left: 100px;
 	top: 20px;
-	
-	border: 2px solid red;
+	text-align: center;
 }
 
 .gallery-close-btn{
@@ -335,6 +334,9 @@ p {
 .gallery-img {
 	max-height: 100%;
 	width: auto;
+	height: 100%;
+	margin-right:auto;
+	margin-left:auto;
 }
 
 .thumb {

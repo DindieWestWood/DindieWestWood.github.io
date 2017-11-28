@@ -23,8 +23,8 @@ $(document).ready(function () {
 		var target = $(this).attr("data-target");
 		var large = $(this).attr("data-large");
 		thumbToMax(target, large);
-		$(this).parent().parent().parent().children().removeClass("active");
-		$(this).parent().parent().addClass("active");
+		$(this).parent().parent().children().removeClass("active");
+		$(this).parent().addClass("active");
     });
 
 	$('.gallery-thumbnail').click(function () {
@@ -33,7 +33,7 @@ $(document).ready(function () {
 		var large = $(document.getElementById(id)).attr("data-large");
 		showGallery();
 		thumbToMax(target, large);
-		$(id).parent().parent().addClass("active");
+		$(id).parent().addClass("active");
 	});
 
 	$('.gallery-close-btn').click(function () {
