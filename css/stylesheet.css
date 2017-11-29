@@ -340,6 +340,7 @@ p {
 .thumb {
 	width: 24px;
 	height: auto;
+	cursor: pointer;
 }
 
 .active img{
@@ -358,6 +359,7 @@ p {
     -webkit-transition: .25s;
     -moz-transition: .25s;
     -ms-transition: .25s;
+	cursor: pointer;
 }
 
 .thumbnail-container img:hover,
