@@ -61,7 +61,7 @@ p {
 }
 
 .navbar-custom img {
-    width: 30px;
+    width: 37px;
     height: auto;
 }
 
@@ -118,7 +118,7 @@ p {
 }
 
 .title img {
-    width: 32px;
+    width: 40px;
     height: auto;
 }
 
@@ -455,7 +455,7 @@ p {
 .cv h1{
     padding-top: 10px;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .cv h2 {
@@ -467,11 +467,16 @@ p {
     font-size: 12px;
 }
 
+
 .line {
     width: 1px;
     height: 40px;
     background-color: #FFFFFF;
     margin: auto;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .social-media-container img {
@@ -522,7 +527,7 @@ p {
         margin-bottom: 18px;
     }
 
-    .title img { width: 36px; }
+    .title img { width: 45px; }
 
     .jumbotron img { width: 42px; }
     
@@ -556,7 +561,7 @@ p {
         margin-bottom: 20px;
     }
 
-    .title img { width: 40px; }
+    .title img { width: 50px; }
 
     .jumbotron img { width: 48px; }
     
@@ -593,7 +598,7 @@ p {
         margin-bottom: 22px;
     }
 
-    .title img { width: 44px; }
+    .title img { width: 55px; }
 
     .jumbotron img { width: 54px; }
     
@@ -629,7 +634,7 @@ p {
         margin-bottom: 24px;
     }
 
-    .title img { width: 48px; }
+    .title img { width: 60px; }
 
     .jumbotron img { width: 60px; }
     
