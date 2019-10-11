@@ -49,7 +49,13 @@ $(document).ready(function () {
     
     function onScroll(positionTop) {
         $('#navbar').fadeTo(0, (positionTop / coverdist));
-        $('#profile-picture').fadeTo(0, 1 - ((positionTop - coverdist) / ((cvtopdist - coverdist) / 2)));
+        var fade = 1 - ((positionTop - coverdist) / ((cvtopdist - coverdist) / 2));
+        if (fade > 0) {
+            $('#profile-picture').fadeTo(0, fade);
+            $('#profile-picture').hide();
+        } else {
+            $('#profile-picture').show();
+        }
         updateActiveNavItem(positionTop);
     }
     
