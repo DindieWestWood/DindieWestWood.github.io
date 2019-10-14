@@ -10,7 +10,7 @@
     --z-background: -2;
     --z-dots: -1;
     --z-foreground: 10;
-    --z-overlay: 100;
+    --z-overlay: 1080;
 }
 
 html {
@@ -218,6 +218,10 @@ a:focus .nav-dot-inner  {
     width: 2px;
 }
 
+.min-h-100 {
+    min-height: 100%;
+}
+
 .dots-fixed-overlay {
     position: fixed;
     bottom: 0;
@@ -242,17 +246,11 @@ a:focus .nav-dot-inner  {
 }
 
 .background {
-    position: absolute;
     background-image: url("../images/background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
+    min-height: 100%;
     z-index: var(--z-background);
 }
 
